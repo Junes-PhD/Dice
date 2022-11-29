@@ -79,11 +79,15 @@ class manual:
 
         results = self.d6.roll(int(input.rolls()))
         show.terminal(results)
-        n = int(input.dice_num())
+        n = input.dice_num()
         x = self.d6.num_plus(n)
         print("Hits:",x)
+        print("Roll Dice?")
+        if input.agree() == "no":
+            print("exiting")
+            return            
         self.d6.roll(x)
-        #add more here
+        
 
 
 def main():
