@@ -1,3 +1,4 @@
+'''
 class display:
 
     def __init__(self) -> None:
@@ -8,10 +9,13 @@ class display:
 
     def terminal(self, results):
         print(results)
-        '''
+        
         print("#########         #########         #########         #########         #########         #########")
         print("# 0   0 #         # 0   0 #         # 0   0 #         # 0     #         # 0     #         #       #")
         print("# 0   0 #         #   0   #         #       #         #   0   #         #       #         #   0   #")
         print("# 0   0 #         # 0   0 #         # 0   0 #         #     0 #         #     0 #         #       #")
         print("#########         #########         #########         #########         #########         #########")
-        '''
+        
+'''
+def terminal(results):
+        print(results)

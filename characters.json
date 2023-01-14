@@ -1,0 +1,5 @@
+{"Squads":[
+    "INTERCESSION SQUAD",[ 
+        {"ASSAULT INTERCESSOR SERGEANT": {"M": 6, "APL":3 ,"GA": 1,"DF": 3, "SV":3, "W":15, "Shooting": {"EQUIPED":0, "1":"HAND FLAMER", "2":"HEAVY BOLT PISTOL", "3":"PLASMA PISTOL"}, "Melee": {"EQUIPED":0, "1":"CHAIN SWORD", "2":"POWER FIST", "3":"POWER WEAPON", "4":"THUNDER HAMMER"}}}}
+    ]
+]}

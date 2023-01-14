@@ -1,3 +1,4 @@
+from logging import critical
 import random
 
 class sides:
@@ -56,7 +57,7 @@ class sides:
             self.results[trial] += 1
         return self.results
 
-    def reroll_fish(self):
+    def reroll_fish(self): #fish for crits
         print("Fishing for 6's")
         rerolls = 0
         for n in range(6 - 1):
@@ -75,6 +76,16 @@ class sides:
         for n in range(number, self.sides + 1):
             successes += self.results[n]
         return successes
+
+    def num_plus_with_crits(self, number):
+        number = self.sides_check(number)
+        if not number:
+            return
+        successes = 0
+        for n in range(number, self.sides):
+            successes += self.results[n]
+        critical_successes = self.results[6]
+        return successes, critical_successes
 
     def num_minus(self, number):
         number = self.sides_check(number)
